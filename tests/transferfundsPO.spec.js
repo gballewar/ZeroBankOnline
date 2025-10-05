@@ -18,7 +18,7 @@ test('@Transfer Funds', async ({ page }) => {
     //Assertions
     await expect(transferfundspage.FromAccount).toBeDisabled();
     await expect(transferfundspage.ToAccount).toBeDisabled();
-    await expect(transferfundspage.Ammount).toBeDisabled();
+    await expect(transferfundspage.Amount).toBeDisabled();
     await expect(transferfundspage.Description).toBeDisabled();
 
     await transferfundspage.TransferFundsCancel();
@@ -26,7 +26,7 @@ test('@Transfer Funds', async ({ page }) => {
     //Assertions
     await expect(transferfundspage.FromAccount).toBeEnabled();
     await expect(transferfundspage.ToAccount).toBeEnabled();
-    await expect(transferfundspage.Ammount).toBeEnabled();
+    await expect(transferfundspage.Amount).toBeEnabled();
     await expect(transferfundspage.Description).toBeEnabled();
     await expect(transferfundspage.ContinueButton).toBeVisible();
 
