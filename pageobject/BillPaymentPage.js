@@ -9,7 +9,7 @@ class BillPaymentPage {
         this.PaySavedPayee = page.locator('[class*="ui-state-active"]');
         this.Payee = page.locator('#sp_payee');
         this.Account = page.locator('#sp_account');
-        this.Ammount = page.locator('#sp_amount');
+        this.Amount = page.locator('#sp_amount');
         this.Calendar = page.locator('#sp_date');
         this.Date = page.locator('.ui-state-default', {hasText:'18'});
         this.Description = page.locator('#sp_description');
@@ -28,7 +28,7 @@ class BillPaymentPage {
 
         await this.Payee.selectOption('Apple');
         await this.Account.selectOption('Checking');
-        await this.Ammount.fill('200');
+        await this.Amount.fill('400');
         await this.Calendar.click();
         await this.Date.click();
         await this.Description.fill('Pay Bills Test');
