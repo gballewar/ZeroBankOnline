@@ -6,7 +6,7 @@ const {LoginPage} = require('../pageobject/LoginPage');
 test.use({ storageState: 'storageState.json' });
 
 
-test('Login test', async ({page}) => {
+test('@Login test', async ({page}) => {
 
 //Login to the app
 const loginPage = new LoginPage(page);
