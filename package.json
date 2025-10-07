@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "Login": "npx playwright test --grep @Login",
     "TransferFunds": "npx playwright test --grep @Transfer",
     "BillPayment": "npx playwright test --grep @Bill",
     "Summary": "npx playwright test --grep @Summary"
